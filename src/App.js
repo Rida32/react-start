@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 import Product from './components/Product';
 import Retail from './components/Retail';
 
+import Image4 from './assets/product4.jpg';
 function App() {
   return (
     <>
@@ -53,6 +54,7 @@ function App() {
             </div>
         </div>
     </div>
+    <Retail img={pro}
     <div className="container my-5">
         <div className="row">
             <div className="col-md-3">
