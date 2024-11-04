@@ -17,6 +17,16 @@ import product4 from "./assets/product4.jpg";
 import product5 from "./assets/product5.jpg";
 
 function App() {
+  let loading = false
+  let obj ={name:" Rida Ayesha", id : 673,  courses  : ["math", "eng"] }
+  let arr = ["rida", "ayesha"]
+
+  function test (parms){
+    loading =true
+    console.log("name",parms)
+    console.log("itest2",obj.courses[0] )
+
+  } 
   return (
     <>
       <Navbar />
@@ -96,7 +106,10 @@ function App() {
         >
           <div className="started text-center">
             <h1 className="nail">
-              Get started with <span>Little</span> Fashion
+              Get started with <span onClick={()=>{
+                test(obj.name)
+              }}>Little {arr[0]}
+              </span> Fashion
             </h1>
             <p>
               Join us to explore the latest trends and stay stylish every day!
